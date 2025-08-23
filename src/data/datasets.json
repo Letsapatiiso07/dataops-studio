@@ -1,0 +1,51 @@
+[
+  {
+    "name": "stg_weather_raw",
+    "description": "Raw weather payloads landed in ADLS",
+    "rows": 1200000,
+    "sizeGB": 3.2,
+    "pii": false
+  },
+  {
+    "name": "dim_city",
+    "description": "City dimension with geo attributes",
+    "rows": 84,
+    "sizeGB": 0.01,
+    "pii": false
+  },
+  {
+    "name": "fact_weather_hourly",
+    "description": "Hourly aggregates by city and station",
+    "rows": 920000,
+    "sizeGB": 6.4,
+    "pii": false
+  },
+  {
+    "name": "mart_forecast",
+    "description": "Forecast-ready features for ML",
+    "rows": 450000,
+    "sizeGB": 2.1,
+    "pii": false
+  },
+  {
+    "name": "orders_raw",
+    "description": "Raw orders from e-commerce platform",
+    "rows": 780000,
+    "sizeGB": 4.3,
+    "pii": true
+  },
+  {
+    "name": "dim_product",
+    "description": "Product dimension",
+    "rows": 2400,
+    "sizeGB": 0.08,
+    "pii": false
+  },
+  {
+    "name": "fact_orders_daily",
+    "description": "Daily aggregated orders metrics",
+    "rows": 3650,
+    "sizeGB": 0.55,
+    "pii": false
+  }
+]

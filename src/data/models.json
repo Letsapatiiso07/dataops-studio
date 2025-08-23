@@ -1,0 +1,34 @@
+[
+  {
+    "name": "demand-forecasting",
+    "description": "XGBoost-based daily demand forecasts",
+    "version": "v1.4.2",
+    "latencyMs": 42,
+    "requests": 18000,
+    "successPct": 99
+  },
+  {
+    "name": "anomaly-detector",
+    "description": "Isolation Forest for sensor anomalies",
+    "version": "v0.9.5",
+    "latencyMs": 85,
+    "requests": 5600,
+    "successPct": 97
+  },
+  {
+    "name": "churn-predictor",
+    "description": "LightGBM customer churn model",
+    "version": "v2.1.0",
+    "latencyMs": 60,
+    "requests": 13200,
+    "successPct": 98
+  },
+  {
+    "name": "fraud-screener",
+    "description": "Real-time fraud rules + model",
+    "version": "v1.0.1",
+    "latencyMs": 38,
+    "requests": 25400,
+    "successPct": 99
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "runId": "run-001",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 6,
+    "records": 50130,
+    "cost": 0.00082
+  },
+  {
+    "runId": "run-002",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 7,
+    "records": 50260,
+    "cost": 0.00094
+  },
+  {
+    "runId": "run-003",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 8,
+    "records": 50390,
+    "cost": 0.00106
+  },
+  {
+    "runId": "run-004",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 9,
+    "records": 50520,
+    "cost": 0.00118
+  },
+  {
+    "runId": "run-005",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 10,
+    "records": 50650,
+    "cost": 0.0007
+  },
+  {
+    "runId": "run-006",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 5,
+    "records": 50780,
+    "cost": 0.00082
+  },
+  {
+    "runId": "run-007",
+    "pipeline": "ingest_weather",
+    "status": "running",
+    "latencyMin": 6,
+    "records": 50910,
+    "cost": 0.00094
+  },
+  {
+    "runId": "run-008",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 7,
+    "records": 51040,
+    "cost": 0.00106
+  },
+  {
+    "runId": "run-009",
+    "pipeline": "ingest_weather",
+    "status": "failed",
+    "latencyMin": 8,
+    "records": 51170,
+    "cost": 0.00118
+  },
+  {
+    "runId": "run-010",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 9,
+    "records": 51300,
+    "cost": 0.0007
+  },
+  {
+    "runId": "run-011",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 10,
+    "records": 51430,
+    "cost": 0.00082
+  },
+  {
+    "runId": "run-012",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 5,
+    "records": 51560,
+    "cost": 0.00094
+  },
+  {
+    "runId": "run-013",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 6,
+    "records": 51690,
+    "cost": 0.00106
+  },
+  {
+    "runId": "run-014",
+    "pipeline": "ingest_weather",
+    "status": "running",
+    "latencyMin": 7,
+    "records": 51820,
+    "cost": 0.00118
+  },
+  {
+    "runId": "run-015",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 8,
+    "records": 51950,
+    "cost": 0.0007
+  },
+  {
+    "runId": "run-016",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 9,
+    "records": 52080,
+    "cost": 0.00082
+  },
+  {
+    "runId": "run-017",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 10,
+    "records": 52210,
+    "cost": 0.00094
+  },
+  {
+    "runId": "run-018",
+    "pipeline": "ingest_weather",
+    "status": "failed",
+    "latencyMin": 5,
+    "records": 52340,
+    "cost": 0.00106
+  },
+  {
+    "runId": "run-019",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 6,
+    "records": 52470,
+    "cost": 0.00118
+  },
+  {
+    "runId": "run-020",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 7,
+    "records": 52600,
+    "cost": 0.0007
+  },
+  {
+    "runId": "run-021",
+    "pipeline": "ingest_weather",
+    "status": "running",
+    "latencyMin": 8,
+    "records": 52730,
+    "cost": 0.00082
+  },
+  {
+    "runId": "run-022",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 9,
+    "records": 52860,
+    "cost": 0.00094
+  },
+  {
+    "runId": "run-023",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 10,
+    "records": 52990,
+    "cost": 0.00106
+  },
+  {
+    "runId": "run-024",
+    "pipeline": "ingest_weather",
+    "status": "success",
+    "latencyMin": 5,
+    "records": 53120,
+    "cost": 0.00118
+  }
+]
