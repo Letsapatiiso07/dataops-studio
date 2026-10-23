@@ -1,102 +1,71 @@
-🚀 DataOps Studio — Modern DataOps & MLOps Dashboard
+# DataOps Studio
 
-A professional React + TypeScript + Tailwind dashboard built to showcase Data Engineering & AI Engineering skills.
-This project is designed as a portfolio-ready application that demonstrates cloud-native dashboards, data observability, and MLOps monitoring.
+A front-end prototype of a monitoring dashboard for a data team: pipeline
+runs, a dataset catalog and a model registry, on one screen. Built with
+React, TypeScript, Tailwind CSS and Recharts.
 
-✨ Features
+It runs on sample data. The numbers come from three JSON files in
+`src/data/`, not from live pipelines. The aim was to design the screens a
+data platform team would need, ready to be wired to a real backend.
 
-React 18 + TypeScript + Vite — blazing-fast modern stack
+![Dashboard with pipeline latency, dataset sizes and model success charts](docs/dashboard.png)
 
-TailwindCSS — responsive, clean, dark-mode ready UI
+## Pages
 
-Recharts — rich interactive visualizations
+- **Dashboard:** three charts: latency of the last 12 pipeline runs,
+  sizes of the six largest datasets, and the success rate of each served
+  model.
+- **Pipelines:** a table of 24 runs with status badges (success, running,
+  failed), latency, record count and cost.
+- **Datasets:** a catalog of 7 tables you can search by name, each with row
+  count, size and a flag for personal data (PII).
+- **Models:** cards for 4 models with version, latency, request count and
+  success rate.
 
-Modular Architecture — components, pages, JSON mock data
+A button in the sidebar switches between light and dark themes.
 
-Dark Mode Toggle 🌙 — professional touch for recruiters
+![Run history table with status badges](docs/pipelines.png)
 
-📊 Pages
+![Dataset catalog with search, in the dark theme](docs/datasets-dark.png)
 
-Dashboard
+## How to run it
 
-Pipeline latency trend (Line chart)
+You need Node.js 18 or later.
 
-Dataset size distribution (Bar chart)
-
-Model success rate (Area chart)
-
-Pipelines
-
-Table view of pipeline executions (status, latency, records, cost)
-
-Status badges with color coding (Success, Running, Failed)
-
-Datasets
-
-Searchable dataset catalog
-
-Dataset cards with row counts, size, and PII flags
-
-Models
-
-ML model registry overview
-
-Cards with accuracy, latency, version, and request counts
-
-🛠️ Tech Stack
-
-Frontend: React, TypeScript, Vite
-
-Styling: TailwindCSS (with custom themes)
-
-Charts: Recharts
-
-Tooling: ESLint, PostCSS, GitHub Pages ready
-
-🚀 Getting Started
-# Clone the repository
-git clone https://github.com/<letsapatiiso07>/dataops-studio.git
+```bash
+git clone https://github.com/Letsapatiiso07/dataops-studio.git
 cd dataops-studio
-
-# Install dependencies
 npm install
-
-# Start dev server
 npm run dev
+```
 
-# Build for production
-npm run build
+Then open http://localhost:5173. `npm run build` type-checks the code and
+writes a static site to `dist/`.
 
-📂 Project Structure
+## How it is built
+
+```
 src/
- ├── components/    # Reusable UI components (Layout, Sidebar, Card, Header)
- ├── pages/         # Dashboard, Pipelines, Datasets, Models
- ├── data/          # Mock JSON data (pipelines, datasets, models)
- ├── App.tsx        # Root component with navigation
- └── main.tsx       # Entry point
+  App.tsx         page switching and the theme toggle
+  components/     Layout, Sidebar, Header, Card
+  pages/          Dashboard, Pipelines, Datasets, Models
+  data/           sample data: pipelines.json, datasets.json, models.json
+```
 
-🌟 Why This Project?
+Each page imports its JSON file directly and renders it, so swapping a JSON
+import for a `fetch` call to an API is the only change a page needs to show
+real data.
 
-This project was built as part of my AI & Data Engineering portfolio to demonstrate:
+## Next steps
 
-Data observability dashboards
+- Connect the pages to a real backend (for example FastAPI) instead of the
+  JSON files.
+- Add URL routing, so each page has its own link and the back button
+  works. Today the current page is held in React state.
+- Split the charting library into its own chunk; the build is about 550 kB
+  of JavaScript.
+- Deploy the static build to GitHub Pages.
 
-DataOps & MLOps principles
+## Author
 
-Frontend engineering skills with React/TypeScript
-
-Professional polish suitable for recruiters & hiring managers
-
-📌 Next Steps
-
-✅ Multi-page dashboard with dark mode
-
-🔜 Connect to a backend API (FastAPI / Node.js)
-
-🔜 CI/CD pipeline with GitHub Actions
-
-🔜 Deploy to GitHub Pages / Netlify / Vercel
-
-🧑‍💻 Author
-
-Tiiso Letsapa
+Tiiso Letsapa, Letsapamyron07@gmail.com
